@@ -1,7 +1,6 @@
-
-@media only screen and (min-width: 980px) {
-
-html            {height: 100%;}
+html {
+    height: 100%;
+}
 
 body            {display: block; height: 100%; 
                 background-image: url("../../assets/images/backdrop.png");}
@@ -15,19 +14,19 @@ header          {width: 100%;
 
 
 /* squeeze will set width and margin for nav bar */
-#squeeze        {width: 1000px; margin: auto;}
+#squeeze        {width: 66%; margin: auto;}
 
 #navtext        {padding: 30px; color: gray}
             
 /* This is the box around the Profile page */ 
-#content        {width: 956px; margin-top: 40px;
+#content        {width: 66%; margin-top: 40px;
                 background-color: white; 
                 display: block; clear: both;}
 
 /* h1 only effects my name on the 3 html pages */                
 h1              {font-size: 36px; color:white; font-weight: bolder;
                 background-color: #4aaaa5; 
-                float: left; padding: 20px 40px 20px 40px; margin-left: 20px;}
+                float: left; padding: 20px 40px 20px 40px;}
 
 /* wrapper is working with push and html/body to create my sticky footer. at least i think */
 #wrapper        {min-height: 100%; margin-bottom: -45px;}
@@ -35,20 +34,20 @@ h1              {font-size: 36px; color:white; font-weight: bolder;
 #push           {height: 45px;}
 
 
-#portfolio      {width: 956px; margin: auto; color: #777777; background-color: #ffffff;
+#portfolio      {width: 66%; margin: auto; color: #777777; background-color: #ffffff;
                 display: block; font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
                 line-height: 22px; border: 2px solid #dddddd; clear: both; padding: 0px 20px 20px 0px;}
 
-#contacts       {width: 956px; margin: auto; color: #777777; background-color: #ffffff;
+#contacts       {width: 66%; margin: auto; color: #777777; background-color: #ffffff;
                 display: block; font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
                 line-height: 22px; border: 2px solid #dddddd; clear: both; padding: 20px;}
 
 /* h2 is color and size for the "Contact" "Portfolio" and "About Me" text*/                
 h2              {font-size: 32px; float: left; font-weight: bolder;
-                padding: 20px; width: 920px; clear: both;
+                padding: 20px; width: 100%; clear: both;
                 color: teal;} 
 
-article         {width: 956px; margin: auto; color: #777777; background-color: #ffffff;
+article         {width: 66%; margin: auto; color: #777777; background-color: #ffffff;
                 display: block; font:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
                 line-height: 28px; border: 2px solid #dddddd; clear: both; padding: 20px;}
 
@@ -79,14 +78,67 @@ a:visited       {text-decoration: none; color: grey}
 
 
 footer          {display: block; background-color: dimgray; border-top: #4aaaa5 solid 5px;
-                text-align: center; color: white; padding: 20px 20px 10px 20px; font-size: 10px;}
+                text-align: center; color: white; padding: 20px 20px 10px 20px; font-size: 10px; margin-top: 5%;}
 
+
+ /*
+@media only screen and (min-width: 980px){
+
+
+    #content {width:
+
+    }
+
+    h1: {width:
+
+    }
 }
-
 
 
 @media only screen and (min-width: 768px){
 
 
+    #content {width: 66%;
 
-@media only screen and (min-width: 640px)
+    }
+
+    h1: {margin-left: 100%;
+
+    }
+
+    #squeeze: {width: 100%;
+    
+    }
+
+    h2: {width: 80%
+    
+    }
+
+}
+
+*/
+@media only screen and (max-width: 640px){
+
+    h1 {
+        width: 100%; 
+        padding: 20px 40px 20px 40px;
+
+    
+    }
+    header {
+        border-bottom: 0;
+    }
+
+    .nav 
+        { 
+        font-size: 1em; 
+        padding: 20px;
+        color:grey;}
+
+    #navtext{
+        padding: .75em; 
+        color: gray}
+    #squeeze {
+        margin: 0px;
+    }
+}
